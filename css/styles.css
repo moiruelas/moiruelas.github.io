@@ -345,3 +345,66 @@ button:hover, button:focus {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+/* New IE-specific styles */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  /* Fallback for CSS Variables (IE doesn't support CSS Variables) */
+/* Replace variable references with their values */
+body {
+  background-color: #0047AB;
+  color: #ADD8E6;
+}
+
+.profile a {
+  color: #8bcd8d;
+}
+
+.page-header {
+  display: -ms-flexbox; /* Fallback for Flexbox */
+  display: flex;
+  /* Other styles remain the same */
+}
+
+.page-header__item:last-child {
+  -ms-flex-positive: 1; /* Fallback for Flexbox */
+  flex-grow: 1;
+  /* Other styles remain the same */
+}
+
+ul {
+  /* Fallback for Flexbox */
+  display: -ms-flexbox;
+  display: flex;
+  /* Other styles remain the same */
+}
+
+.navigation-item,
+.page-header a {
+  color: #add8e6; /* Default color for unvisited links */
+}
+
+/* Fallback for :visited pseudo-class */
+.navigation-item:visited,
+.page-header a:visited {
+  color: #add8e6;
+}
+
+/* Fallback for Grid Layout */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .projects {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+  }
+
+  .grid__item {
+    color: #000000;
+    background-color: #d3d3d3;
+    width: auto;
+    min-height: auto;
+    padding: 24px;
+    margin: 0;
+  }
+}
+  /* IE-specific styles */
+}
