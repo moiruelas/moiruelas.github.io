@@ -115,7 +115,7 @@ table {
 }
 
 .page-header a:visited {
-  color: var(--navigation-menu-color); /* Color for visited links */
+  color: #add8e6; /* Color for visited links */
 }
 
 .navigation-item {
@@ -123,9 +123,8 @@ table {
 }
 
 .navigation-item:visited {
-  color: var(--navigation-menu-color); /* Color for visited links */
+  color: #add8e6; /* Color for visited links */
 }
-
 
 a:visited {
   color: #795cb2;
