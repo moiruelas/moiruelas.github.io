@@ -96,7 +96,7 @@ table {
 }
 
 .page-header a {
-  color: #add8e6; /* Default color for unvisited links */
+  color: var(--navigation-menu-color); /* Default color for unvisited links */
 }
 
 .page-header a:visited {
@@ -104,7 +104,7 @@ table {
 }
 
 .navigation-item {
-  color: #add8e6; /* Default color for unvisited links */
+  color: var(--navigation-menu-color); /* Default color for unvisited links */
 }
 
 .navigation-item:visited {
