@@ -95,6 +95,22 @@ table {
   }
 }
 
+.page-header a {
+  color: #add8e6; /* Default color for unvisited links */
+}
+
+.page-header a:visited {
+  color: var(--navigation-menu-color); /* Color for visited links */
+}
+
+.navigation-item {
+  color: #add8e6; /* Default color for unvisited links */
+}
+
+.navigation-item:visited {
+  color: var(--navigation-menu-color); /* Color for visited links */
+}
+
 a:visited {
   color: var(--visited-link-color);
 }
